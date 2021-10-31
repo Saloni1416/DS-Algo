@@ -1,0 +1,17 @@
+# intializing the list
+arr=[]
+n=int(input("enter no. of ele:"))
+for i in range(0,n):
+    ele=int(input("enter elelments:\n"))
+    arr.append(ele)
+# print(list(arr))
+ 
+# arr = [1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3]
+count={}
+for i in arr:
+    if i in count:
+        count[i]+=1
+    else:
+        count[i]=1
+for key,value in count.items():
+    print(f"{key}:{value}")
